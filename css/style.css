@@ -49,7 +49,7 @@ a {
 .whatsapp-button {
     position: fixed;
     right: 400px;
-    bottom: 720px;
+    bottom: 250px;
     transform: translate(-50%, -50%);
     background: #25D366; /*цвет кнопки*/
     border-radius: 50%;
