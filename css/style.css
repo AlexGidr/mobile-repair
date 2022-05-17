@@ -48,8 +48,8 @@ a {
 /* Кнопка */
 .whatsapp-button {
     position: fixed;
-    right: 350px;
-    bottom: 920px;
+    right: 400px;
+    bottom: 720px;
     transform: translate(-50%, -50%);
     background: #25D366; /*цвет кнопки*/
     border-radius: 50%;
