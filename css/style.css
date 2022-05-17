@@ -1,0 +1,294 @@
+ul,li,a {
+    text-decoration: none;
+    list-style: none;
+}
+/* Header */
+header {
+}
+.header {
+    padding: 40px 0 30px 0;
+    top: 0px;
+    left: 0;
+    width: 100%;
+
+}
+.form-wrapper, .stepsб .footer {
+    background: rgb(244, 244, 252);
+    padding: 10px;
+
+}
+a {
+    color: #464646;
+    font-style: normal;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+  }
+.header-btn {
+    border: 1px solid black;
+    padding: 10px 30px 10px 20px;
+    border-radius: 5px;
+    width: 180px;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    margin-left: 36px;
+    background-color: #fff;
+}
+.header-btn:hover {
+    background-color: #0d6efd;
+    color: aliceblue;
+}
+.header-phone {
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    
+}
+/* Кнопка */
+.whatsapp-button {
+    position: fixed;
+    right: 350px;
+    bottom: 920px;
+    transform: translate(-50%, -50%);
+    background: #25D366; /*цвет кнопки*/
+    border-radius: 50%;
+    width: 55px; /*ширина кнопки*/
+    height: 55px; /*высота кнопки*/
+    color: #fff;
+    text-align: center;
+    line-height: 53px; /*центровка иконки в кнопке*/
+    font-size: 35px; /*размер иконки*/
+    z-index: 9999;
+}
+.whatsapp-button a {
+    color: #fff;
+}
+.whatsapp-button:before,
+.whatsapp-button:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    border: 50%;
+    border: 1px solid #25D366; /*цвет анимированных волн от кнопки*/
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+    backface-visibility: hidden; 
+}
+ 
+.whatsapp-button:after{
+    animation-delay: .5s;
+}
+ 
+@keyframes animate
+{
+    0%
+    {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+/* кнопка завершается */
+/* Медиа начало */
+@media (max-width: 540px) {
+    .header-list-call {
+        padding-left: 20%;
+    }
+    .logo {
+        margin-bottom: 30px;
+    }
+    .header-text {
+        font-size: 20px;
+    }
+
+}
+
+/* медиа конец */
+.header-align {
+    text-align: center;
+
+}
+.header-text {
+    line-height: 1.2;
+    max-width: 400px;
+}
+.header-list-call {
+    display: inline-block;
+}
+/* Форма */
+.header,  {
+    background-color: rgb(204, 203, 255);
+}
+.form {
+    padding: 50px 0;
+}
+.form {
+    background-image: url(../img/phone.png);
+    object-fit: scale-down;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.form-bg {
+    max-width: 550px;
+}
+.form-list {
+    text-align: left;
+    padding-left: 30%;
+    line-height: 1.5;
+    margin-left: -10px;
+    font-style: italic;
+    font-weight: 700;
+}
+.form-list p {
+    font-size: 20px;
+    text-align: left;
+}
+.form h2 {
+    text-align: center;
+}
+.form-control {
+    width: 40%;
+    margin-left: 180px;
+    margin-bottom: 30px;
+}
+.form-items {
+    text-align: left;
+    padding-left: 30%;
+}
+.form-item {
+    font-size: 22px;
+    font-weight: 400;
+
+}
+.form-item::before {
+    content: '-';
+    padding-right: 10px;
+}
+form input[type="submit"] {
+    background-color: #0d6efd;
+    color: white;
+   } 
+form input[type="text"] {
+    margin-bottom: 15px;
+}
+.phone {
+    display: none;
+}
+.g-3 {
+    margin-right: -150px;
+}
+/* медиа начало */
+@media (max-width: 576px) {
+    .logo {
+        margin-left: 30px;
+    }
+    .header-text {
+        min-width: 330px;
+    }
+
+    .phone {
+        display: inline-block;
+       margin-bottom: 20px;
+       margin-left: -10px;
+    }
+    .form-control {
+        width: 80%;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+    .form h2, .form h3, .form p, .form li {
+        color: black;
+
+    }
+    .form-bg {
+        margin-bottom: 10px;
+    }
+    .form h2, .form h3, .form p, .form li {
+        color: black;
+
+    }
+    .form {
+        background-image: none;
+
+    }
+    .w-100 {
+        margin-top: 20%;
+    }
+.form-list, .form-items {
+    margin-left: -50px;
+
+}   
+    .form-list p {
+        max-width: 260px;
+    }
+    
+    .g-3 {
+        margin-right: 0;
+    }
+ 
+
+}
+@media (min-width: 770px) {
+
+    .form h2, .form h3, {
+        padding-left: 20%;
+
+    }
+}
+/* медиа конец */
+
+/* услуги */
+.card {
+    margin: 20px 0px 60px 20px;
+    border: 1px solid white;
+    box-shadow: 0 0 3px grey;
+}
+.card-body {
+    padding-right: 10px;;
+}
+.serve h2 {
+    margin-top: 20px;
+}
+
+/* steps */
+.serve, .carousell {
+    background-color: rgb(204, 203, 255);
+}
+.steps h2 {
+    text-align: center;
+    margin: 30px;
+}
+.steps p {
+    text-align: center;
+}
+.steps-item {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Карусель */
+.carousel-item{
+    min-height: 280px;
+}
+/* footer */
+.footer-text {
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+}
