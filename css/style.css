@@ -48,8 +48,8 @@ a {
 /* Кнопка */
 .whatsapp-button {
     position: fixed;
-    right: 400px;
-    bottom: 750px;
+    right: 0px;
+    bottom: 720px;
     transform: translate(-50%, -50%);
     background: #25D366; /*цвет кнопки*/
     border-radius: 50%;
@@ -114,10 +114,11 @@ a {
     .header-text {
         font-size: 20px;
     }
-    
-.whatsapp-button {
-    right: 0px;
-    bottom: 520px;
+    .whatsapp-button {
+        position: fixed;
+        right: 0px;
+        bottom: 520px;
+    }
 }
 
 /* медиа конец */
