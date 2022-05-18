@@ -114,7 +114,10 @@ a {
     .header-text {
         font-size: 20px;
     }
-
+    
+.whatsapp-button {
+    right: 150px;
+    bottom: 420px;
 }
 
 /* медиа конец */
